@@ -1,0 +1,9 @@
+<div id="gold-links-holder">
+    <div id="gold-links">
+        <div id="header-links">
+            <a class="header-links-left" href="http://kcc.sage.eou.edu/">[% l('KCC Catalog Home') %]</a>
+            <a class="header-links-right" href="http://www.klamathcc.edu/Campus/Learning-Resources-Center">[% l('KCC Learning Resources Homepage') %]</a>
+            <a class="header-links-right" href="[% mkurl(ctx.opac_root _ '/myopac/main') %]">[% l('My Account') %]</a>
+        </div>
+    </div>
+</div>
