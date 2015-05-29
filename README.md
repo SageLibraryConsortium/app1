@@ -1,4 +1,4 @@
 # app1
 app1 templates
 
-##2.75 EG Templates For App1
+Github Repository for 2.75 EG Templates // App1
