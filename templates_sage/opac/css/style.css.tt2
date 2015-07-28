@@ -1763,7 +1763,7 @@ a.preflib_change {
      }
 }
 
-@media only screen and (max-width: main accountpx) {
+@media only screen and (max-width: 600px) {
     input, select {
         font-size: [% css_fonts.size_big %];
     }
