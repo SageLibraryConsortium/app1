@@ -18,6 +18,9 @@
 /web/reporter
 /web/reporter_sage
 /web/standalone
+/web/xul/2_4sage_000.old
+/web/xul/2_5sage_000.old
+/web/xul/2_7sage_000
 
 *.log
 *.zip
