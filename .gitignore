@@ -12,13 +12,11 @@
 /run
 /updates
 /xsl
-/web
 /web/conify
 /web/notices
 /web/reports
 /web/reporter
 /web/standalone
-/web/xul
 
 *.log
 *.zip
