@@ -54,7 +54,7 @@
         END;
 
         extras = [
-            {name => 'summaryplus',  label => l('Summaries &amp; More'), hide => hide_summary}, 
+            {name => 'summaryplus',  label => l('Summaries & More'), hide => hide_summary},
             {name => 'annotation', label => l('Annotation'), hide => 1},  
             {name => 'excerpt',  label => l('Excerpt'), hide => 1},
             {name => 'issues',   label => l('Issues Held'), hide => !(ctx.have_holdings_to_show || ctx.have_mfhd_to_show)},
@@ -84,7 +84,7 @@
                         arrow = arrow_right;
                     END;
                 %]
-                <a name='[% name %]' href='[% href %]' class="rdetail_extras_lbl">[% arrow %] [% extra.label %]</a>
+                <a name='[% name %]' href='[% href %]' class="rdetail_extras_lbl" rel="nofollow" vocab="">[% arrow %] [% extra.label | html %]</a>
             </div>
         </div>
         <div class='rdetail_extras_div'>
