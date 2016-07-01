@@ -745,7 +745,7 @@ collapse correctly when the window width decreases */
 }
 
 #metabib_search_modifier {
-		vertical-align: middle;
+    vertical-align: middle;
 }
 
 .results_header_sel {
@@ -820,7 +820,7 @@ tr.result_table_row > td.result_table_pic_header {
 }
 
 div.result_table_utils_cont {
-    text-align:left;
+    text-align:right;
     float: left;
 }
 
@@ -1944,9 +1944,38 @@ a.preflib_change {
         padding: 0px;
         margin: 0px;
     }
-    tr[name=results_isbn_tr], tr[name=results_phys_desc_tr], tr[name=results_pub_tr] strong, .result_count {
+    /* Mobile Results */
+    /* Show ISBN, and Series only for Mobile (tr[name=results_isbn_tr] and tr[name=results_series_tr] */
+    tr[name=results_phys_desc_tr], tr[name=results_pub_tr], tr[name=results_edition_tr], .result_count {
          display: none;
     }
+    /* Hide Library Info for Mobile*/
+    table.result_holdings_table {
+    	display: none;
+    }
+    /*Push it to the Right */
+    div.result_table_utils_cont {
+    	text-align:right;
+    	float: right;
+    }
+    /* On top of each other */
+    .results_aux_utils {
+    	display:block;
+    }
+    .result_util {
+    	padding-left: 0;
+    	border-bottom:none;
+    }
+    div.place_hold {
+    	border:none;
+    }
+    .results_header_nav1 {
+    	text-align:center;
+    }
+
+
+    
+    
     tr.result_table_title_cell[name=bib_cn_list] .result_holdings_table th:nth-child(4),
     tr.result_table_title_cell[name=bib_cn_list] .result_holdings_table td:nth-child(4) {
         display:none;
@@ -2019,6 +2048,7 @@ a.preflib_change {
     }
     .result_metadata {
         width: inherit;
+        padding-left: 5px;
     }
     div#rdetail_actions_div {
         float: none;
