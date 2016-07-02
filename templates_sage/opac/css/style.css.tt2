@@ -820,7 +820,7 @@ tr.result_table_row > td.result_table_pic_header {
 }
 
 div.result_table_utils_cont {
-    text-align:right;
+    text-align:left;
     float: left;
 }
 
