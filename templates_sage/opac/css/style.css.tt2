@@ -1953,15 +1953,6 @@ a.preflib_change {
     table.result_holdings_table {
     	display: none;
     }
-    /*Push it to the Right */
-    div.result_table_utils_cont {
-    	text-align:right;
-    	float: right;
-    }
-    /* On top of each other */
-    .results_aux_utils {
-    	display:block;
-    }
     .result_util {
     	padding-left: 0;
     	border-bottom:none;
@@ -1972,10 +1963,19 @@ a.preflib_change {
     .results_header_nav1 {
     	text-align:center;
     }
-
-
-    
-    
+    .center_box {
+    	display:inline-block;
+    	padding: 5px;
+    	font-weight: bold;
+    }
+    .center_box a {
+    	text-decoration: none;
+    }
+    .format_icon {
+        float:right;
+        padding-left:15px;
+    }
+    /* Revisit */
     tr.result_table_title_cell[name=bib_cn_list] .result_holdings_table th:nth-child(4),
     tr.result_table_title_cell[name=bib_cn_list] .result_holdings_table td:nth-child(4) {
         display:none;
