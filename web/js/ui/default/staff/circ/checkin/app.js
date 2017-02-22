@@ -33,6 +33,7 @@ angular.module('egCheckinApp', ['ngRoute', 'ui.bootstrap',
 /**
  * Manages checkin
  */
+
 .controller('CheckinCtrl',
        ['$scope','$q','$window','$location','egCore','checkinSvc','egGridDataProvider','egCirc',
 function($scope , $q , $window , $location , egCore , checkinSvc , egGridDataProvider , egCirc)  {
@@ -320,3 +321,8 @@ function($scope , $q , $window , $location , egCore , checkinSvc , egGridDataPro
 
 }])
 
+// add in techlogic code
+var origTitle=document.title;
+$('form').on('submit', function() {document.getElementById('patron-checkin-barcode').blur();document.title=origTitle;});
+$('body').on('blur', '#patron-checkin-barcode',function() {document.title=origTitle;});
+$('body').on('focus', '#patron-checkin-barcode',function() {document.title=origTitle+' (RFID: On)';});
